@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="mx-auto  p-6 container ">
+        <div class="flex justify-between items-center">
+            <div>
+                <img width="50px" src="https://cdn4.iconfinder.com/data/icons/tabler-vol-2/24/brand-tailwind-64.png" alt="tailwind logo">
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a class="hover:text-yellow-400   text-slate-900" href="#">Portfolio</a>
+                <a class="hover:text-yellow-400   text-slate-900" href="#">About</a>
+                <a class="hover:text-yellow-400   text-slate-900" href="#">Contact</a>
+                <a class="hover:text-yellow-400   text-slate-900" href="#">Social</a>
+                <a class="hover:bg-slate-500 rounded-full bg-yellow-400 py-2 px-6  text-white" href="#">Call me</a>
+
+            </div>
+
+            <button type="button" id="mobile-btn" class="md:hidden"><i class=" text-2xl ri-menu-line"></i></button>
+
+        </div>
+        <div class="md:hidden">
+            <div id="mobile-menu" class="items-center space-y-4 
+           drop-shadow-lg border-gray-300 hidden font-bold bg-gray-50 absolute flex flex-col py-6 left-6 right-6">
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+                <a href="#">Social</a>
+                <a class="hover:bg-slate-500 rounded-full bg-yellow-400 py-2 px-6  text-white" href="#">Call me</a>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="px-6  space-x-6 mx-auto container flex-col-reverse flex  md:flex-row ">
+            <div class="md:w-1/2 text-center md:text-left py-8
+            text-slate-900 justify-center flex flex-col space-y-5">
+                <h2 class="text-3xl md:text-5xl font-bold ">Rapidly build modern websites without ever leaving your HTML. </h2>
+                <p>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
+                <a class="self-center md:self-start hover:bg-slate-500 rounded-full bg-yellow-400
+                 py-2 px-6  text-white" href="#">Call me</a>
+            </div>
+            <div class=" w-full md:w-1/2"><img class="" src="https://images.unsplash.com/photo-1656680715953-75d4bbcbb839?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGFpbHdpbmQlMjBjc3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="undraw"></div>
+
+        </div>
+    </section>
+
+    <section id="author">
+        <div class="mx-5  my-32 text-center container">
+            <h2 class="font-bold text-4xl">"Best practice "don't actually work.</h2>
+            <p class="mx-auto mt-8 max-w-5xl">I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough
+                to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
+            <div class="mt-10 space-x-0 space-y-5 flex flex-col 
+            md:space-x-5 md:flex-row md:space-y-0 ">
+
+                <div class="flex items-center flex-col p-6 space-y-2 rounded-lg
+                   border border-slate-200  md:w-1/3 bg-slate-100">
+                    <img src="https://media.istockphoto.com/id/1171169127/photo/headshot-of-cheerful-handsome-man-with-trendy-haircut-and-eyeglasses-isolated-on-gray.webp?b=1&s=170667a&w=0&k=20&c=ErOpmNtGDfh1N5xs34-cycSdTso18EvFHEIpcBZC9w0=" alt="Adam" class="-mt-12 rounded-full
+                    w-16 ">
+                    <h5 class="font-bold text-lg text-slate-900">Adam sandler</h5>
+                    <p class="text-slate-700 leading-5 text-sm ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequuntur magnam magni distinctio repudiandae minima, quae animi rem eveniet et!</p>
+                </div>
+
+
+                <div class="flex items-center flex-col p-6 space-y-2 rounded-lg
+                   border border-slate-200  md:w-1/3 bg-slate-100">
+                    <img src="	https://tailwindcss.com/_next/static/media/ryan-florence.3af9c9d9.jpg" alt="Adam" class=" rounded-full
+                    w-16 -mt-12 ">
+                    <h5 class="font-bold text-lg text-slate-900">Ryan Florence</h5>
+                    <p class="text-slate-700 leading-5 text-sm ">I feel like an idiot for not using Tailwind CSS until now.</p>
+                </div>
+
+
+                <div class="flex items-center flex-col p-6 space-y-2 rounded-lg
+                   border border-slate-200  md:w-1/3 bg-slate-100">
+                    <img src="https://media.istockphoto.com/id/1288538088/photo/portrait-young-confident-smart-asian-businessman-look-at-camera-and-smile.webp?b=1&s=170667a&w=0&k=20&c=EcjlfC0hE33usx5Ys_ftE1iC0TlgKG1pSqclpOULGLk=" alt="Adam" class="-mt-12  rounded-full
+                    w-16 ">
+                    <h5 class="font-bold text-lg text-slate-900">Ben Furfie</h5>
+                    <p class="text-slate-700 leading-5 text-sm ">I’ve been writing CSS for over 20 years, and up until 2017, the way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realize semantic
+                        CSS was a 20 year mistake.</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer class="bg-slate-900">
+
+        <div class="container flex flex-col-reverse  justify-between space-y-8 md:space-y-0 
+        text-white mx-auto py-10 px-5 md:mt-0 md:flex-row">
+            <div class="flex flex-col space-y-12 md:space-y-2 justify-between items-center">
+                <div class="text-center mt-6 md:mt-0 md:mb-2">
+                    © Copyright Video Puppet Limited 2018 - 2023.
+                </div>
+                <div><img class="h-8 w-44 " src="images/tailwind-dark.png" alt="logofoot"></div>
+                <div class="flex space-x-4">
+                    <a href="#"> <i class="text-3xl ri-facebook-box-fill"></i> </a>
+                    <a href="#"> <i class="text-3xl ri-instagram-line"></i></a>
+                    <a href="#"> <i class="text-3xl ri-youtube-line"></i> </a>
+                    <a href="#"> <i class="text-3xl ri-linkedin-box-fill"></i></a>
+                    <a href="#"> <i class="text-3xl ri-twitter-fill"></i> </a>
+                </div>
+            </div>
+            <!-- /////////// -->
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-slate-300">Home</a>
+                    <a href="#" class="hover:text-slate-300">About</a>
+                    <a href="#" class="hover:text-slate-300">Contact</a>
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-slate-300">Imprint</a>
+                    <a href="#" class="hover:text-slate-300">Privacy</a>
+                    <a href="#" class="hover:text-slate-300">Credits</a>
+                </div>
+            </div>
+            <!-- ///////////////// -->
+            <div class="flex flex-col justify-between">
+                <form action="#">
+                    <div class="flex space-x-3 ">
+                        <input type="text" name="" id="" placeholder="Subscribe to newsletter" class="flex-1 py-2 px-6 rounded-full ">
+                        <button class="bg-orange-500 px-4 py-2 hover:bg-slate-500 rounded-full ">Go</button>
+                    </div>
+                </form>
+
+                <div class="hidden md:block">
+                    © Copyright Video Puppet Limited 2018 - 2023.
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    <script src="myjavascript.js"></script>
+</body>
+
+</html>
